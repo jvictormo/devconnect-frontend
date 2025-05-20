@@ -1,25 +1,105 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --maincolor: #FF8C00;
+  --background: #EAEAEA;
+  --foreground: #1A1A1A;
+  --color2: #ECDDD2;
+  --color3: #F4D0B5;
+  --color4: #FFB87F;
+  --color5: #FFA656;
+  --color6: #F89946;
+  --color7: #E6862D;
+  --color8: #D96B00;
+  --color9: #C76100;
+  --color10: #B55700;
+  --color11: #984700;
+  --color12: #5C2C00;
+  --monochromatic2: #E0E0E0;
+  --monochromatic3: #D6D6D6;
+  --monochromatic4: #CCC;
+  --monochromatic5: #C4C4C4;
+  --monochromatic6: #BABABA;
+  --monochromatic7: #AFAFAF;
+  --monochromatic8: #9B9B9B;
+  --monochromatic9: #6E6E6E;
+  --monochromatic10: #646464;
+  --monochromatic11: #494949;
+  --monochromatic12: #202020;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --maincolor: #FF8C00;
+    --background: #1A1A1A;
+    --color2: #241C16;
+    --color3: #372313;
+    --color4: #4A2502;
+    --color5: #562D04;
+    --color6: #643A14;
+    --color7: #7A4A21;
+    --color8: #9C5E29;
+    --color9: #9C5E29;
+    --color10: #F38100;
+    --color11: #FFA353;
+    --color12: #FFDFC8;
+    --monochromatic2: #212121;
+    --monochromatic3: #292929;
+    --monochromatic4: #2F2F2F;
+    --monochromatic5: #363636;
+    --monochromatic6: #3E3E3E;
+    --monochromatic7: #4A4A4A;
+    --monochromatic8: #616161;
+    --monochromatic9: #6E6E6E;
+    --monochromatic10: #7B7B7B;
+    --monochromatic11: #B4B4B4;
+    --monochromatic12: #EEE;
   }
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+h1,
+h4 {
+  color: var(--monochromatic12);
+}
+
+p {
+  color: var(--monochromatic11);
+}
+
+button {
+  border: 0;
+  border-radius: 12px;
+  padding: 1.75vh 5vw;
+  background-color: var(--maincolor);
+  color: var(--monochromatic12);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--color8);
+}
+
+button:active {
+  background-color: var(--color7);
+}
+
+@media (prefers-color-scheme: dark) {
+  button:hover {
+    background-color: var(--color10);
+  }
+  button:active {
+    background-color: var(--color11);
+  }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -31,7 +111,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: #296AB8;
   text-decoration: none;
 }
 

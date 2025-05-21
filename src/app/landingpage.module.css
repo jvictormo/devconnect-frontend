@@ -1,0 +1,136 @@
+.landingpage-container {
+    padding: 5vh 10vw 0 2.5vw;
+}
+
+.landingpage-logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5.3vh;
+
+    img {
+        max-width: 7.5vw;
+    }
+}
+
+.landingpage-main-content {
+    display: grid;
+    grid-auto-flow: column;
+    width: 60vw;
+    grid-template-rows: 3fr 1.5fr;
+    gap: 2.7vh;
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    label {
+        font-size: 0.93rem;
+    }
+}
+
+.landingpage-main-quote {
+    width: 80%;
+}
+
+.landingpage-main-quote> :nth-child(2) {
+    margin-top: 1.15vh;
+    margin-bottom: 7vh;
+}
+
+.landingpage-features-modal-container {
+    display: flex;
+    gap: 0.75vw;
+
+    div {
+        width: 20vw;
+        height: 20vh;
+        padding: 1.25vw;
+        background-color: var(--monochromatic3);
+        border: 1px solid var(--monochromatic8);
+        border-radius: 9px;
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        width: 75%;
+        gap: 1vw;
+
+        img {
+            height: 4rem;
+            width: 4rem;
+        }
+    }
+}
+
+.landingpage-password-forms {
+    position: absolute;
+    right: 7.5vw;
+    top: 23.5vh;
+    height: 57.5vh;
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 6vh 3.33vw;
+    border: 2px solid var(--monochromatic8);
+    border-radius: 9px;
+
+    button,
+    input,
+    div {
+        width: 100%;
+    }
+
+
+    svg {
+        position: absolute;
+        height: 1.5rem;
+        width: 1.5rem;
+        top: 6.75vh;
+        left: 6vw;
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+
+        hr {
+            border-color: var(--monochromatic8);
+            width: 100%;
+        }
+
+        label {
+            color: var(--monochromatic11);
+            font-size: 0.93rem;
+        }
+    }
+
+    p {
+        color: var(--monochromatic8);
+    }
+}
+
+.landingpage-password-forms> :nth-child(2) {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+.landingpage-password-forms> :nth-child(4) {
+    margin-top: 2.3vh;
+    margin-bottom: 4vh;
+}
+
+.landingpage-password-forms> :nth-child(6) {
+    margin-top: 2.2vh;
+    margin-bottom: 2.2vh;
+}
+
+.landingpage-password-forms button:first-of-type {
+    background-color: #464646;
+    font-weight: normal;
+    font-size: 0.93rem;
+}

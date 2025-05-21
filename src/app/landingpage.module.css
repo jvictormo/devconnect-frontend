@@ -1,3 +1,4 @@
+/* Adding borders to landingpage */
 .landingpage-container {
     padding: 5vh 10vw 0 2.5vw;
 }
@@ -12,6 +13,7 @@
     }
 }
 
+/* Divinding landing page content into two containers (quotes and signup button and feature cards) */
 .landingpage-main-content {
     display: grid;
     grid-auto-flow: column;
@@ -32,12 +34,13 @@
     width: 80%;
 }
 
+/* Spacing between tittle and paragraph */
 .landingpage-main-quote> :nth-child(2) {
     margin-top: 1.15vh;
     margin-bottom: 7vh;
 }
 
-.landingpage-features-modal-container {
+.landingpage-features-cards-container {
     display: flex;
     gap: 0.75vw;
 
@@ -63,7 +66,8 @@
     }
 }
 
-.landingpage-password-forms {
+/* Styling login froms */
+.landingpage-login-forms {
     position: absolute;
     right: 7.5vw;
     top: 23.5vh;
@@ -114,22 +118,22 @@
     }
 }
 
-.landingpage-password-forms> :nth-child(2) {
+/* Adding space between the objects of login forms */
+.landingpage-login-forms> :nth-child(2) {
     margin-top: 4vh;
     margin-bottom: 4vh;
 }
-
-.landingpage-password-forms> :nth-child(4) {
+.landingpage-login-forms> :nth-child(4) {
     margin-top: 2.3vh;
     margin-bottom: 4vh;
 }
-
-.landingpage-password-forms> :nth-child(6) {
+.landingpage-login-forms> :nth-child(6) {
     margin-top: 2.2vh;
     margin-bottom: 2.2vh;
 }
 
-.landingpage-password-forms button:first-of-type {
+/* Changing the style of the github login button */
+.landingpage-login-forms button:first-of-type {
     background-color: #464646;
     font-weight: normal;
     font-size: 0.93rem;

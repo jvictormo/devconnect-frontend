@@ -1,3 +1,4 @@
+/* Color palette for light theme */
 :root {
   --maincolor: #FF8C00;
   --background: #EAEAEA;
@@ -26,6 +27,7 @@
   --monochromatic12: #202020;
 }
 
+/* Color palette for dark theme */
 @media (prefers-color-scheme: dark) {
   :root {
     --maincolor: #FF8C00;
@@ -55,25 +57,13 @@
   }
 }
 
-h1 {
-  font-size: 3.5rem;
-}
-
-h6 {
-  font-size: 0.93rem;
-}
-
-h1,
-h4,
-h6 {
-  color: var(--monochromatic12);
-}
-
+/* Typography */
+h1 {font-size: 3.5rem;}
+h6 {font-size: 0.93rem;}
 label,
-p {
-  color: var(--monochromatic11);
-}
+p {color: var(--monochromatic11);}
 
+/* Styling the input based on the template */
 input {
   border: 1px solid var(--monochromatic8);
   background-color: transparent;
@@ -83,29 +73,31 @@ input {
   border-radius: 12px;
 }
 
+/* Styling the button based on the template */
 button {
   border: 0;
   border-radius: 12px;
   padding: 1vh 5vw;
   background-color: var(--maincolor);
-  color: var(--monochromatic12);
   font-size: 1.25rem;
   font-weight: bold;
   cursor: pointer;
-
   transition:
     background-color 0.2s ease-in-out,
     color 0.2s ease-in-out;
 }
 
+/* Changing button hover color based on color palette */
 button:hover {
   background-color: var(--color8);
 }
 
+/* Changing button active color based on color palette */
 button:active {
   background-color: var(--color7);
 }
 
+/* Changing button hover and active color based on color palette for dark theme */
 @media (prefers-color-scheme: dark) {
   button:hover {
     background-color: var(--color10);
@@ -116,25 +108,30 @@ button:active {
   }
 }
 
+/* Changingg the background color, font color, and font family of the project */
 body {
-  color: var(--foreground);
+  color: var(--monochromatic12);
   background: var(--background);
   font-family: "Inter", Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Removing project borders */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+/* Styling a links */
 a {
   color: #296AB8;
   text-decoration: none;
+  cursor: pointer;
 }
 
+/* Switch in case the user uses dark theme to dark theme */
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

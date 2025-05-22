@@ -58,17 +58,49 @@
 }
 
 /* Typography */
-h1 {font-size: 3.5rem;}
-h6 {font-size: 0.93rem;}
+h1 {
+  font-size: 3.5rem;
+}
+
+h6 {
+  font-size: 0.93rem;
+}
+
 label,
-p {color: var(--monochromatic11);}
+p {
+  color: var(--monochromatic11);
+}
 
 /* Styling the input based on the template */
 input {
   border: 1px solid var(--monochromatic8);
   background-color: transparent;
   padding: 1.5vh 1.25vw;
-  color: var(--monochromatic8);
+  color: var(--monochromatic12);
+  font-size: 0.812rem;
+  border-radius: 12px;
+}
+input::placeholder {
+  color: var(--monochromatic6);
+}
+
+select {
+  border: 1px solid var(--monochromatic8);
+  background-color: transparent;
+  padding: 1.5vh 1.25vw;
+  color: var(--monochromatic12);
+  font-size: 0.812rem;
+  border-radius: 12px;
+}
+select::placeholder {
+  color: var(--monochromatic6);
+}
+
+option {
+  border: 1px solid var(--monochromatic8);
+  background-color: transparent;
+  padding: 1.5vh 1.25vw;
+  color: var(--monochromatic12);
   font-size: 0.812rem;
   border-radius: 12px;
 }
@@ -106,6 +138,11 @@ button:active {
   button:active {
     background-color: var(--color11);
   }
+}
+
+button:disabled {
+  filter: grayscale(100%) brightness(70%);
+  cursor: auto;
 }
 
 /* Changingg the background color, font color, and font family of the project */
